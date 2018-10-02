@@ -30,6 +30,9 @@ a, a:hover, a:focus {
 .header-nav img {
     width: 18px;
 }
+.form-header {
+    width: calc(100% - 270px);
+}
 img.avatar {
     width: 50px;
 }
@@ -118,5 +121,18 @@ ul ul a {
     }
     #sidebar.active {
         margin-left: 0;
+    }
+    .form-header {
+        width: 100%;
+    }
+    .header-nav {
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    .header-nav .nav-item {
+        flex-basis: 20%;
+    }
+    .header-nav .nav-item:last-child {
+        flex-basis: 40%;
     }
 }
